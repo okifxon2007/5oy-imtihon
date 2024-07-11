@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let card = document.querySelector('.cardmain');
             let button = document.querySelector('.button');
             
-            function getIdFromLocalStorage() {
+            function lokalfrom() {
                 let idList = [];
                 if (localStorage.getItem("idList")) {
                     idList = JSON.parse(localStorage.getItem("idList"));
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.addEventListener('click', function (e) {
                     e.preventDefault();
                     const cardId = card.getAttribute('data-id');
-                    let idList = getIdFromLocalStorage();
+                    let idList = lokalfrom();
                     
                     if (idList.includes(cardId)) {
                         alert('Bu mahsulot allaqachon qo\'shilgan');
