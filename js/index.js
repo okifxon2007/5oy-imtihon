@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     cards.addEventListener('click', function(){
                         const cardid = this.getAttribute('data-id')
                         if (cardid) {
-                            window.location.assign(`http://127.0.0.1:5500/pages/card.html?id=${cardid}`)
+                            window.location.assign(`/pages/card.html?id=${cardid}`)
                         }
                     })
                     let shopnd = document.getElementById('shoping')
                     shopnd.style.cursor = 'pointer'
                     if (shopnd) {
                         shopnd.addEventListener('click', function(){
-                            window.location.assign('http://127.0.0.1:5500/pages/page.html')
+                            location.assign('/pages/page.html')
                         })
                     }
                 });
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         cards.addEventListener('click', function(){
                             const cardid = this.getAttribute('data-id')
                             if (cardid) {
-                                window.location.assign(`http://127.0.0.1:5500/pages/card.html?id=${cardid}`)
+                                window.location.assign(`/pages/card.html?id=${cardid}`)
                             }
                         })
                     });
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             cards.addEventListener('click', function(){
                                 const cardid = this.getAttribute('data-id')
                                 if (cardid) {
-                                    window.location.assign(`http://127.0.0.1:5500/pages/card.html?id=${cardid}`)
+                                    window.location.assign(`/pages/card.html?id=${cardid}`)
                                 }
                             })
                         });

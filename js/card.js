@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if (cardid) {
                     idLIst.push(cardid)
                     localStorage.setItem('selectedCardId', idLIst);
-                    window.location.assign(`http://127.0.0.1:5500/pages/page.html?id=${cardid}`)
+                    window.location.assign(`/pages/page.html?id=${cardid}`)
                 }
                
             })

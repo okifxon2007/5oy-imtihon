@@ -1,5 +1,9 @@
 
 function pagecard(url){
+    console.log(url);
+    if (url.message == 'Mahsulot topilmadi') {
+        return ` <h2 style='text-align:center'>Mahsulot topilmadi</h2>`
+    }
     return `
     
     <div class="page-main">
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
     fetch(`https://cars-pagination.onrender.com/products/${idd}`)
     .then(res => res.json())
     .then(data =>{
-        light.style.display 
+        light.style.display = ''
         let lokaldata = localStorage.getItem('malumot');
         
         if (lokaldata) {
@@ -59,20 +63,19 @@ document.addEventListener('DOMContentLoaded', function(){
         light.innerHTML += pagecard(item);
     });
 
-        pagecard(lokaldata);
         
         
         let pokupku = document.querySelector('.pokupku')
     if (pokupku) {
         pokupku.addEventListener('click', function() {
-            window.location.assign('http://127.0.0.1:5500/index.html')
+            window.location.assign('/index.html')
         })
     }
     let udalit = document.querySelector('.udalit');
     udalit && udalit.addEventListener('click', function(){
         localStorage.clear()
         light.style.display = 'none'
-        window.location.assign('http://127.0.0.1:5500/index.html')
+        window.location.assign('/index.html')
     })
 })
     
