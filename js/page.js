@@ -1,7 +1,7 @@
 
 function pagecard(url){
     console.log(url);
-    if (url.message == 'Mahsulot topilmadi') {
+    if (url.message == '.') {
         return ` <h2 style='text-align:center'>Mahsulot topilmadi</h2>`
     }
     return `
