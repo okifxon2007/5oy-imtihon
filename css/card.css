@@ -28,9 +28,15 @@
     height: 35px;
 }
 
+
 .boxing{
     height: 90px;
     background-color: white;
+}
+.boxing a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .boxing hr{
     margin: 20px;
@@ -48,6 +54,7 @@
     gap: 17px;
     color: #161C24;
 }
+
 
 .img img{
     padding-top: 20px;

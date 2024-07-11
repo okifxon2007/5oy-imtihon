@@ -6,7 +6,6 @@ let loader = document.querySelector('.loader')
 
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
    
     getdata('https://cars-pagination.onrender.com/products/')
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         wrapper.innerHTML += card;
                     }
                 });
-
+                
 
                 let card = document.querySelectorAll('.card')
                 card.length > 0 && card.forEach(cards => {
@@ -70,10 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         })
                     });
                     
+                    
+                    
                 
 
                 })
+                
             });
+            
     
   
    

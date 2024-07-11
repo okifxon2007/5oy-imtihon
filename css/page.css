@@ -32,6 +32,11 @@
     height: 90px;
     background-color: white;
 }
+.boxing a{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
 .boxing hr{
     margin: 20px;
 }
@@ -138,5 +143,5 @@
     background-color: #4295E4;
     border: 1px solid #4295E4;
     color: white;
-    margin-left: 1080px;
+    margin-left: 1000px;
 }
